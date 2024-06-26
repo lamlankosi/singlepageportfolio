@@ -11,7 +11,7 @@
 <script>
 
 import navBar from '@/components/navBar.vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer'
   export default{
     components: {
       navBar,
