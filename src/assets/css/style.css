@@ -7,7 +7,17 @@ img{
 img[alt="logo"]{
     width: 5rem;
 }
+/* footer */
+:is(.wrapper){
+  display: grid;
+  grid-template-rows: auto minmax(100dvh ,100% ) auto ;
+}
+/* scrollbar */
+ ::-webkit-scrollbar{
+  display: none;
+ }
 
+/* default */
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
