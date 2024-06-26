@@ -7,7 +7,8 @@
         <div class="col">
             <div id="details">
                 <h1 class="display-1">Lamla Nomnganga</h1>
-                <span>{{ jobTitle[0].title }}</span>
+                <p v-if="jobTitle?.length"></p>
+                <span>{{ jobTitle[0]?.title}}</span>
             </div>
         </div>
     </div>
@@ -15,10 +16,12 @@
 </template>
 
 <script setup>
-    import { computed, onMounted, onMounyed} from 'vue'
-    const jobTitle = computed(() => this.$store.state.jobTitle)
+    import { computed, onMounted} from 'vue'
+    import {useStore} from 'vuex'
+    const store = useStore()
+    const jobTitle = computed(() => store.state.jobTitle)
     onMounted(() => {
-        this.$store.dispatch('fetchJobTitle')
+        store.dispatch('fetchJobTitle')
     }) 
 </script>
 
