@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary stick-top">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
         <img src="https://lamlankosi.github.io/project_images/Images/LN_logo.png" alt="logo">
@@ -13,16 +13,16 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="#resume">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" href="#testimonials">Testimonials</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reach Me</a>
